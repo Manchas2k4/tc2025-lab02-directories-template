@@ -30,7 +30,7 @@ Path: dir1
 Last access: Tue Jun 4 11:51:29 2019
 Last modification: Wed May 8 12:02:50 2019
 --------------------------------------------------------------------------
-$ .\find char dir1 -r
+$ .\find cha dir1 -r
 Name: chapter2.txt
 Path: dir1
 Last access: Tue Jun 4 11:51:30 2019
