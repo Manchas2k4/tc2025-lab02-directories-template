@@ -59,9 +59,9 @@ Path: dir1/dir2/dir3/dir4/dir5
 ```
 |     | Ponderación                                                                                                                                                                                                   |
 |-----|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 10 | Compila.    |
-| +10 | Verifica que el programa reciba la cantidad correcta de<br>parámetros. En caso de que no sea así, el programa<br>despliega un mensaje adecuado y termina, regresando<br>-2 como resultado de su ejecución.    |
-| +10 | Verifica que el directorio exista. En caso de que no<br>sea un directorio o no exista, el programa despliega<br>un mensaje adecuado y termina, regresando -3 como<br>resultado de su ejecución.               |
-| +10 | Verifica que el parámetro para indicar la recursión sea<br>correcto. En caso de que no sea correcto, el programa<br>despliega un mensaje adecuado y termina, regresando<br>-4 como resultado de su ejecución. |
+|  10 | Compila.    |
+| +10 | Verifica que el programa reciba la cantidad correcta de<br>parámetros. En caso de que no sea así, el programa<br>despliega un mensaje adecuado y termina, regresando<br>-1 como resultado de su ejecución.    |
+| +10 | Verifica que el directorio exista. En caso de que no<br>sea un directorio o no exista, el programa despliega<br>un mensaje adecuado y termina, regresando -2 como<br>resultado de su ejecución.               |
+| +10 | Verifica que el parámetro para indicar la recursión sea<br>correcto. En caso de que no sea correcto, el programa<br>despliega un mensaje adecuado y termina, regresando<br>-3 como resultado de su ejecución. |
 | +30 | Busca **SOLO** dentro del directorio *initial_directory*<br>y muestra los archivos que contienen dentro de su<br>nombre la cadena *string*. Regresa 0 como resultado<br>de su ejecución.                      |
 | +30 | Busca **RECURSIVAMENTE** dentro del directorio<br>*initial_directory* y muestra los archivos que contienen<br>dentro de su nombre la cadena *string*. Regresa<br>0 como resultado de su ejecución.            |
