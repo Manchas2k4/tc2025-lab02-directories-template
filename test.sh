@@ -54,7 +54,7 @@ if [[ $? -ne 0 ]] ; then
 	exit 1
 fi
 sort temp.txt > run.txt
-diff run.txt non_recursive.txt
+diff run.txt non_recursive.txt > /dev/null 2>&1
 if [[ $? -ne 0 ]] ; then 
 	echo "grade: $cal"
 	exit 1
@@ -69,7 +69,7 @@ if [[ $? -ne 0 ]] ; then
 	exit 1
 fi
 sort temp.txt > run.txt
-diff run.txt recursive.txt
+diff run.txt recursive.txt > /dev/null 2>&1
 if [[ $? -ne 0 ]] ; then 
 	echo "grade: $cal"
 	exit 1
