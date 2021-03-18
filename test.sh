@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# HOW TO RECREATE THE TEST FILES
+#./app apt dir1 > temp.txt
+#sed -i '/^$/d;s/[[:blank:]]//g' temp.txt
+#sed -i 's/\r//g' temp.txt
+#sort temp.txt > non_recursive.txt
+#./app apt dir1 -r > temp.txt
+#sed -i '/^$/d;s/[[:blank:]]//g' temp.txt
+#sed -i 's/\r//g' temp.txt
+#sort temp.txt > recursive.txt
+
 rm temp.txt run.txt app
 
 cal=0
@@ -55,10 +65,10 @@ if [[ $? -ne 0 ]] ; then
 	echo "grade: $cal"
 	exit 1
 fi
+sed -i '/^$/d;s/[[:blank:]]//g' temp.txt
 sed -i 's/\r//g' temp.txt
-
 sort temp.txt > run.txt
-sed -i 's/\r//g' run.txt
+
 sed -i 's/\r//g' non_recursive.txt
 diff run.txt non_recursive.txt > /dev/null 2>&1
 if [[ $? -ne 0 ]] ; then 
@@ -74,10 +84,10 @@ if [[ $? -ne 0 ]] ; then
 	echo "grade: $cal"
 	exit 1
 fi
+sed -i '/^$/d;s/[[:blank:]]//g' temp.txt
 sed -i 's/\r//g' temp.txt
-
 sort temp.txt > run.txt
-sed -i 's/\r//g' run.txt
+
 sed -i 's/\r//g' recursive.txt
 diff run.txt recursive.txt > /dev/null 2>&1
 if [[ $? -ne 0 ]] ; then 
