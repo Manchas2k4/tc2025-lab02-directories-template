@@ -55,11 +55,11 @@ if [[ $? -ne 0 ]] ; then
 	echo "grade: $cal"
 	exit 1
 fi
-
 sed -i 's/\r//g' temp.txt
+
+sort temp.txt > run.txt
 sed -i 's/\r//g' run.txt
 sed -i 's/\r//g' non_recursive.txt
-sort temp.txt > run.txt
 diff run.txt non_recursive.txt > /dev/null 2>&1
 if [[ $? -ne 0 ]] ; then 
 	echo "grade: $cal"
@@ -74,11 +74,11 @@ if [[ $? -ne 0 ]] ; then
 	echo "grade: $cal"
 	exit 1
 fi
-
 sed -i 's/\r//g' temp.txt
+
+sort temp.txt > run.txt
 sed -i 's/\r//g' run.txt
 sed -i 's/\r//g' recursive.txt
-sort temp.txt > run.txt
 diff run.txt recursive.txt > /dev/null 2>&1
 if [[ $? -ne 0 ]] ; then 
 	echo "grade: $cal"
