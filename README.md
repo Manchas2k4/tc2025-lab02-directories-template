@@ -1,3 +1,4 @@
+![Tec de Monterrey](images/logotecmty.png)
 # Actividad colaborativa - Manejo de directorios
 Escribe un programa llamado *find* que recibe de línea de comando una cadena de texto a buscar, un directorio base y, de forma opcional, si queremos que la búsqueda sea recursiva o no.
 
